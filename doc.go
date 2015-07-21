@@ -1,2 +1,2 @@
-// Package ubiapiv2 is the Ubiquity Hosting API v2 client for Go
+// Package goubi is the Ubiquity Hosting Go client for their v2 API
 package goubi
