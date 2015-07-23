@@ -49,7 +49,7 @@ type Instance struct {
 	LockedReason                 string `json:"locked_reason"`
 	NearOverageSentOn            string `json:"near_overage_sent_on"`
 	FullOverageSentOn            string `json:"full_overage_sent_on"`
-	IsBareMetal                  int    `json:"is_bare_metal,string"`
+	IsBareMetal                  int    `json:"is_bare_metal"`
 	HddFriendly                  string `json:"hdd_friendly"`
 	MemoryFriendly               string `json:"memory_friendly"`
 	BandwidthUsed                int    `json:"bandwidth_used,string"`
@@ -71,7 +71,7 @@ type CreateVMBase struct {
 type CreateVM struct {
 	InvoiceID int     `json:"invoice_id,string"`
 	ServiceID int     `json:"service_id,string"`
-	Balance   float64 `json:"balance"`
+	Balance   float64 `json:"balance,string"`
 	OrderID   int     `json:"order_id,string"`
 }
 
